@@ -26,11 +26,12 @@ namespace ConsoleApp12
 			Side4 = side4;
 
 		}
-		internal virtual void square()
+		internal virtual double square()
 		{
-			int c = Side1;
+			double c = Side1;
 			double S = Math.Pow(c, 2);
 			Console.WriteLine("Плошадь квадрата: " + S);
+			return S;
 		}
 		internal virtual void Perimetr()
 		{

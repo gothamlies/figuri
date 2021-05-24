@@ -10,14 +10,15 @@ namespace ConsoleApp12
 			: base (side1,side2,height,radius,diagonal, side3, side4)
 		{
 		}
-		internal override void square()
+		internal override double  square()
 		{
-			int c = Side1;
-			int h = Height;
-			int S = c * h / 2;
+			double c = Side1;
+			double h = Height;
+			double S = c * h / 2;
 			Console.WriteLine("Плошадь треугольника: " + S);
+			return S;
 		}
-		internal override void Perimetr()
+		internal override void  Perimetr()
 		{
 			int a = Side1;
 			int b = Side2;

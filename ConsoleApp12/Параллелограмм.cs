@@ -10,12 +10,13 @@ namespace ConsoleApp12
 			base(side1, side2, height, radius, diagonal,side3, side4)
 		{
 		}
-		internal override void square()
+		internal override double square()
 		{
-			int c = Side1;
-			int h = Height;
-			int S = c * h;
+			double c = Side1;
+			double h = Height;
+			double S = c * h;
 			Console.WriteLine("Плошадь параллелограмма: " + S);
+			return S;
 		}
 		internal override void Perimetr()
 		{

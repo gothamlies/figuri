@@ -10,13 +10,14 @@ namespace ConsoleApp12
 			base(side1, side2, height, radius, diagonal,side3,side4)
 		{
 		}
-		internal override void square()
+		internal override double square()
 		{
-			int a = Side1;
-			int b = Side2;
-			int h = Height;
-			int S = ((a + b) / 2) * h;
+			double a = Side1;
+			double b = Side2;
+			double h = Height;
+			double S = ((a + b) / 2) * h;
 			Console.WriteLine("Плошадь трапеции: " + S);
+			return S;
 		}
 
 		internal override void Perimetr()
